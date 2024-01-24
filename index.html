@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <script src="index.js" defer></script>
     <title>Starbucks theme Landing Page</title>
 </head>
 <body>
     <section>
+        <div class="circle"></div>
+        <!-- Header -->
         <header>
             <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
             <ul>
@@ -17,21 +21,31 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </header>
+        <!-- Body -->
         <div class="content">
             <div class="textBox">
                 <h2>It's not just Coffee<br>It's<span> Starbucks</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ut asperiores nisi ea nemo necessitatibus?</p>
                 <a href="#">Learn more</a>
             </div>
+            <!-- Image on the right -->
             <div class="imgBox">
-                <img src="img/img1.png" class="Starbucks">
+                <img src="img/img1.png" class="starbucks">
             </div>
         </div>
+        <!-- Choices -->
         <ul class="thumb">
-            <li><img src="img/thumb1.png"></li>
-            <li><img src="img/thumb2.png"></li>
-            <li><img src="img/thumb3.png"></li>
+            <li><img src="img/thumb1.png" onclick="imgSlider('img/img1.png'); changeCircleColor('#017143')"></li>
+            <li><img src="img/thumb2.png" onclick="imgSlider('img/img2.png'); changeCircleColor('#eb7495')"></li>
+            <li><img src="img/thumb3.png" onclick="imgSlider('img/img3.png'); changeCircleColor('#d752b1')"></li>
+        </ul>
+        <!-- Social Media -->
+        <ul class="social">
+            <li> <a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
         </ul>
     </section>
+    <script src="index.js" defer></script>
 </body>
 </html>
